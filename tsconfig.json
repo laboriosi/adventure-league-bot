@@ -1,6 +1,7 @@
 {
     "extends": "./tsconfig.paths.json",
     "compilerOptions": {
+      "outDir": "dist",
       "target": "ESNext",
       "allowJs": true,
       "skipLibCheck": true,
@@ -13,9 +14,11 @@
       "moduleResolution": "Node",
       "resolveJsonModule": true,
       "isolatedModules": true,
-      "noEmit": true,
     },
-    "include": ["src"],
-    "exclude": ["node_modules"]
+    "tsc-alias": {
+      "resolveFullPaths": true,
+    },
+    "include": ["./src"],
+    "exclude": ["./node_modules"]
   }
   

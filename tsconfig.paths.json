@@ -5,6 +5,15 @@
       "~config": [
         "config"
       ],
+      "~client": [
+        "client"
+      ],
+      "~events": [
+        "events"
+      ],
+      "~types": [
+        "types"
+      ],
       "~config/*": [
         "config/*"
       ],
